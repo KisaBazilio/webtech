@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -141,6 +142,7 @@ section {
 
 div.about {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about .photo {
@@ -151,6 +153,21 @@ div.about {
 .about .info {
     margin-left: 10px;
     flex-grow: 2;
+}
+
+@media ma {
+
+}
+
+@media (max-width: 767px) {
+    .about .photo img{
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    nav span {
+        display: none;
+    }
 }
 
 div.about .info_row {
