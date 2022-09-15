@@ -34,82 +34,67 @@
     <li><a href="#"><i class="fa-solid fa-rss"></i><span>Blog</span></a></li>
     <li class="active"><i class="fa-solid fa-address-card"></i><span>Contacts</span></li>
 </nav>
-
-<div class="container">
-    <h2>Contact me</h2>
-    <div class="row my-5">
-        <div class="col-md-6">
-            <div id="googlemap" style="width:100%; height:350px;"></div>
-        </div>
-        <br />
-        <div class="col-md-6">
-            <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="label" for="name">Full Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+<main>
+<section>
+    <div class="container">
+        <h2>Contact me</h2>
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div id="googlemap" style="width:100%; height:350px;"></div>
+            </div>
+            <br/>
+            <div class="col-md-6">
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="label" for="name">Full Name</label>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="label" for="email">Email Address</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="label" for="subject">Subject</label>
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                       placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="label" for="#">Message</label>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                          placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="margin-top: 10px">
+                            <div class="form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary">
+                                <div class="submitting"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="label" for="email">Email Address</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="label" for="subject">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label class="label" for="#">Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                                      placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-md-12" style="margin-top: 10px">
-                        <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary">
-                            <div class="submitting"></div>
-                        </div>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-
-<style>
-    .my-form {
-        color: #305896;
-    }
-    .my-form .btn-default {
-        background-color: #305896;
-        color: #fff;
-        border-radius: 0;
-    }
-    .my-form .btn-default:hover {
-        background-color: #4498C6;
-        color: #fff;
-    }
-    .my-form .form-control {
-        border-radius: 0;
-    }
-</style>
-
+</section>
+</main>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript">
-        var googlemap = new google.maps.Map(
-            document.getElementById('googlemap'),
-            {
-                center: new google.maps.LatLng(44.5403, -78.5463),
-                zoom: 8,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            }
-        );
+    var googlemap = new google.maps.Map(
+        document.getElementById('googlemap'),
+        {
+            center: new google.maps.LatLng(44.5403, -78.5463),
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+    );
 </script>
 
 <footer class="footer-distributed">
