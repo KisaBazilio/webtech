@@ -1,0 +1,13 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    padding: 10%;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
